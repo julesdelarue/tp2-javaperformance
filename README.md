@@ -45,6 +45,8 @@ discuter.
 
 ## Vérification des prérequis
 
+⚠️Si vous utilisez les VM présentes sur le réseau, ne prenez pas celle de Florent Clarret, **prenez la VM Ubuntu 18.04 Développement**
+
 ### Java
 ```shell
 sudo apt-get install openjdk-11-jdk
@@ -122,6 +124,8 @@ par exemple. Il peut être utile de regarder les options disponibles au niveau d
 En complément, il est demandé de décrire les paramètres possibles à fournir à JMH ainsi que ce que signifie le
 bilan final affiché par celui-ci : comment doit-on le comprendre ? Comment déterminer quelle implémentation
 est la plus rapide ? Etc...
+
+Si certaines annotations semblent obscures, vous pouvez les laisser de côté dans un premier temps et illustrer leur fonctionnement par la rédaction d'un micro-benchmark adapté.
 
 # Mise en place d'un micro-benchmark
 Maintenant que vous savez comment générer un projet JMH, il vous est demandé de mettre en place un
