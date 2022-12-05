@@ -66,7 +66,7 @@ mvn --version
 ```
 
 ## Initialisation d'un nouveau projet maven.
-Génération automatique d'un fichier vide MyBenchmark.java pouvant servir de point d'entrée au TP
+La commande suivante permet de générer un nouveau projet maven avec la génération automatique d'un fichier vide MyBenchmark.java pouvant servir de point d'entrée au TP
 ```shell
 mvn archetype:generate -DinteractiveMode=false -DarchetypeGroupId=org.openjdk.jmh -DarchetypeArtifactId=jmh-java-benchmark-archetype -DgroupId=fr.polytechtours.javaperformance.tp2 -DartifactId=jmh -Dversion=1.0.0
 ```
@@ -76,7 +76,10 @@ mvn archetype:generate "-DinteractiveMode=false" "-DarchetypeGroupId=org.openjdk
 ```
 cf. https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-java-benchmark-archetype
 
+
 Comme pour tout projet maven, vous pouvez construire le jar à l'aide de la commande suivante
+
+⚠️La commande suivante est a exécuter à l'endroit où se trouve le pom.xml
 ```shell
 mvn clean install
 ```
