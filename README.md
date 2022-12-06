@@ -47,6 +47,8 @@ discuter.
 
 ⚠️Si vous utilisez les VM présentes sur le réseau, ne prenez pas celle de Florent Clarret, **prenez la VM Ubuntu 18.04 Développement**
 
+Vous pouvez aussi procéder à l'installation d'IntelliJ sur la VM.
+
 ### Java
 ```shell
 sudo apt-get install openjdk-11-jdk
@@ -69,11 +71,21 @@ mvn --version
 ## Initialisation d'un nouveau projet maven.
 La commande suivante permet de générer un nouveau projet maven avec la génération automatique d'un fichier vide MyBenchmark.java pouvant servir de point d'entrée au TP
 ```shell
-mvn archetype:generate -DinteractiveMode=false -DarchetypeGroupId=org.openjdk.jmh -DarchetypeArtifactId=jmh-java-benchmark-archetype -DgroupId=fr.polytechtours.javaperformance.tp2 -DartifactId=jmh -Dversion=1.0.0
+mvn archetype:generate -DinteractiveMode=false \
+  -DarchetypeGroupId=org.openjdk.jmh \
+  -DarchetypeArtifactId=jmh-java-benchmark-archetype \
+  -DgroupId=fr.polytechtours.javaperformance.tp2 \
+  -DartifactId=jmh \
+  -Dversion=1.0.0
 ```
 Syntaxe Windows
 ```shell
-mvn archetype:generate "-DinteractiveMode=false" "-DarchetypeGroupId=org.openjdk.jmh" "-DarchetypeArtifactId=jmh-java-benchmark-archetype" "-DgroupId=fr.polytechtours.javaperformance.tp2" "-DartifactId=jmh" "-Dversion=1.0.0"
+mvn archetype:generate "-DinteractiveMode=false" `
+"-DarchetypeGroupId=org.openjdk.jmh" `
+"-DarchetypeArtifactId=jmh-java-benchmark-archetype" `
+"-DgroupId=fr.polytechtours.javaperformance.tp2" `
+"-DartifactId=jmh" `
+"-Dversion=1.0.0"
 ```
 cf. https://mvnrepository.com/artifact/org.openjdk.jmh/jmh-java-benchmark-archetype
 
