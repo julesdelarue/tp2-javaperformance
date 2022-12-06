@@ -52,6 +52,7 @@ discuter.
 sudo apt-get install openjdk-11-jdk
 ```
 
+Si vous avez déjà une version Java de configuré sur un distribution Linux, vous pouvez en faire le changement via la commande "update-alternatives"  (ex. https://queirozf.com/entries/update-alternatives-changing-java-version-on-ubuntu)
 
 ```shell
 java --version
